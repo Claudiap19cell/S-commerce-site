@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist E-Commerce Store</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        nav ul {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            font-size: 1em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Product Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product-card p {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .product-card button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">My Minimal Store</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to My Store</h1>
+            <p>Discover minimalist products you'll love.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$30.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products here -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="hero">
+        <div>
+            <h2>About Us</h2>
+            <p>We provide high-quality, minimalist products for modern living.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="hero">
+        <div>
+            <h2>Contact Us</h2>
+            <p>Email: contact@mystore.com</p>
+            <p>Phone: +123-456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Minimal Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
